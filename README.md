@@ -1,32 +1,38 @@
-# React + TypeScript + Vite
+# Sri Syndicate — Wholesale B2B Saree Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/makise-ui/sri-syndicate)
 
-Currently, two official plugins are available:
+B2B wholesale e-commerce prototype for **Sri Syndicate**, Erode, Tamil Nadu (Manufacturers of Hi-Fancy & Hand Loom Cotton Sarees). Built with an **Apple-inspired design language**, direct factory ordering flows, spreadsheet matrix bulk buying, and WhatsApp dispatch integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 1-Click Deploy on Render
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Click the button above or visit:
+**[Deploy on Render](https://render.com/deploy?repo=https://github.com/makise-ui/sri-syndicate)**
 
-## Expanding the Oxlint configuration
+Render will automatically read [`render.yaml`](./render.yaml) and deploy the site as a free Static Site with zero extra configuration.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Manual Render Setup:
+1. Go to [Render Dashboard](https://dashboard.render.com/) → **New +** → **Static Site**.
+2. Connect repository: `makise-ui/sri-syndicate`.
+3. Set the following build settings:
+   - **Build Command:** `npm install && npm run build`
+   - **Publish Directory:** `dist`
+4. Click **Create Static Site**.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🛠️ Tech Stack & Features
+
+- **Framework:** React 18 + TypeScript + Vite
+- **Styling:** Tailwind CSS with custom Apple design tokens & brand palette (Deep Emerald `#0d5940`, Royal Blue `#1d4ed8`, Lime `#84cc16`)
+- **Icons:** Lucide React
+- **Spreadsheet Engine:** SheetJS (`xlsx`) for instant `.xlsx` wholesale order sheet downloads
+- **Key Features:**
+  - Strictly B2B bundle (10 pcs) & master bale (100 pcs) logic
+  - Dexigmatic spreadsheet bulk matrix
+  - Real Kottai, Erode warehouse spotlight
+  - Proforma invoice generator & printable PDF layout
+  - Direct factory WhatsApp order formatter
+  - Retailer margin & bale savings calculator
